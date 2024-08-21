@@ -1,0 +1,29 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "[CB]UiHub",IntroEnabled = true,IntroText = "CB", HidePremium = false, SaveConfig = true, ConfigFolder = "CB"})
+
+local MainTab = Window:MakeTab({
+    Name = "Main Tab",
+    Icon = "rbxassetid://17079723134"
+})
+
+MainTab:AddButton({
+	Name = "ESP",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/8jke/zvz/main/Esp ', true))();
+end)
+
+})
+
+MainTab:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/8jke/zvz/main/Aimbot.',true))();
+end)
+
+})
+local Notify = AkaliNotif.Notify;
+Notify({
+Description = "THANKS FOR USING MY SCRIPT!";
+Title = "CB";
+Duration = 10;
+});
